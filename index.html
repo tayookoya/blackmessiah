@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Messiah AR</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: sans-serif;
+      }
+      model-viewer {
+        width: 100%;
+        height: 80vh;
+        background: #000;
+      }
+      h1 {
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scan this tag to view in your space</h1>
+    <model-viewer
+      src="BLACKMESSIAH-v1.glb"
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      camera-controls
+      auto-rotate
+      ios-src="BLACKMESSIAH-v1.usdz"
+      alt="Black Messiah 3D Shirt Preview">
+    </model-viewer>
+  </body>
+</html>
